@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yume 2Chan</title>
+ 
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Yume 2Chan</div>
+        <img src="https://yume.wiki/images/2/28/Notice_MissingInfo.png"></a>
+        <div class="search-bar">
+       <body>
+        <form onsubmit="return redirecionar()">
+            <input type="text" id="pesquisa" placeholder="Pesquisar produtos......" required>
+            <button type="submit">Pesquisar</button>
+        </form>
+    
+        <script>
+            function redirecionar() {
+                const termo = document.getElementById('pesquisa').value.toLowerCase();
+    
+                // Redireciona com base no termo de pesquisa
+                if (termo === 'higurashi') {
+                    window.location.href = 'higurashi.html';
+                } else if (termo === 'termos') {
+                    window.location.href = 'termos.html';
+                } else if (termo === 'ajuda') {
+                    window.location.href = 'ajuda.html';
+                } else if(termo == 'sobre nós') {
+                    window.location.href = 'sobre-nos.html';
+                } else if(termo == 'conta') {
+                    window.location.href = 'conta.html';
+                } else if(termo == 'carrinho') {
+                    window.location.href = 'carrinho.html';
+                }
+                 else {
+                    alert('Página não encontrada!');
+                }
+    
+                return false; // Impede o envio do formulário
+            }
+        </script>
+        </div>
+        <div class="nav-links">
+            <a href="conta.html">Minha Conta</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="ajuda.html">Ajuda</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h2>Produtos em Destaque</h2>
+        <br>
+        <div class="product-grid">
+            <!-- lista de produtos -->
+            <div class="product-card">
+                <a href="higurashi.html" target="_blank">
+                <img src="https://i.pinimg.com/236x/80/94/17/80941724f61800b0cbc93cb450e6d3ab.jpg" alt="Higurashi" class="product-image">
+                </a>
+                <div class="product-title">Jogo Higurashi PS2 (Raro)</div>
+                <div class="product-price">99,99 €</div>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/236x/b1/b9/f6/b1b9f66939770d3849c7d82d5415005c.jpg" alt="Cartas pokemon" class="product-image">
+                <div class="product-title">Cartas Pokémon (Raras)</div>
+                <div class="product-price">149,99 €</div>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/236x/89/4f/2e/894f2e18d9f83f5626432a8ea1f78933.jpg" alt="Yakuza" class="product-image">
+                <div class="product-title">Yakuza PS2</div>
+                <div class="product-price">39,99 €</div>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/236x/91/f5/bf/91f5bfb7d44e4db02e0bce29329242a6.jpg" alt="Nintendo 3DS XL" class="product-image">
+                <div class="product-title">Nintendo 3DS XL com jogos incluídos (utilizada)</div>
+                <div class="product-price">149,99 €</div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/236x/b7/07/30/b70730d184d8d965025448476638debb.jpg" alt="Sonic Unleashed" class="product-image">
+            <div class="product-title">Sonic Unleashed</div>
+            <div class="product-price">19,99 €</div>
+    </div>
+    <div class="product-card">
+        <img src="https://i.pinimg.com/474x/34/b9/88/34b9885fcd29e57fe6d45d8936713d38.jpg" alt="Playstation 2" class="product-image">
+        <div class="product-title">Playstation 2 (jogos não incluídos)</div>
+        <div class="product-price">199,99 €</div>
+    </div>
+    <div class="product-card">
+        <img src="https://i.pinimg.com/236x/0d/3e/d9/0d3ed98d6f458dd4aea7c43e9517cf39.jpg" alt="PS1" class="product-image">
+        <div class="product-title">Coleção de Jogos para a PS1</div>
+        <div class="product-price">315,99 €</div>
+    </div>
+    <div class="product-card">
+        <img src="https://i.pinimg.com/236x/1a/98/14/1a98144a540122a871c60bf8491fdc62.jpg" alt="Silent Hill 3" class="product-image">
+        <div class="product-title">Silent Hill 3</div>
+        <div class="product-price">79,99 €</div>
+        </div>
+
+    <!-- Rodapé -->
+    <footer>
+        &copy; Yume 2Chan. Todos os direitos reservados.
+    </footer>
+    <a href="sobre-nos.html">Sobre nós</a>
+    <a href="termos.html">Termos e condições</a>
+
+</body>
+</html>

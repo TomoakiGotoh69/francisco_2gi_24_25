@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yume 2Chan</title>
+ 
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Yume 2Chan</div>
+        <img src="https://yume.wiki/images/2/28/Notice_MissingInfo.png"></a>
+        <div class="search-bar">
+       <body>
+        <form onsubmit="return redirecionar()">
+            <input type="text" id="pesquisa" placeholder="Pesquisar produtos......" required>
+            <button type="submit">Pesquisar</button>
+        </form>
+    
+        <script>
+            function redirecionar() {
+                const termo = document.getElementById('pesquisa').value.toLowerCase();
+    
+                // Redireciona com base no termo de pesquisa
+                if (termo === 'higurashi') {
+                    window.location.href = 'higurashi.html';
+                } else if (termo === 'termos') {
+                    window.location.href = 'termos.html';
+                } else if (termo === 'ajuda') {
+                    window.location.href = 'ajuda.html';
+                } else if(termo == 'sobre nós') {
+                    window.location.href = 'sobre-nos.html';
+                } else if(termo == 'conta') {
+                    window.location.href = 'conta.html';
+                } else if(termo == 'carrinho') {
+                    window.location.href = 'carrinho.html';
+                }
+                 else {
+                    alert('Página não encontrada!');
+                }
+    
+                return false; // Impede o envio do formulário
+            }
+        </script>
+        </div>
+        <div class="nav-links">
+            <a href="conta.html">Minha Conta</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="ajuda.html">Ajuda</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h2>Produtos em Destaque</h2>
+        <br>
+        <div class="imagem-container">
+            <!-- lista de produtos -->
+            <div class="product-card">
+                <img src="https://i.pinimg.com/236x/80/94/17/80941724f61800b0cbc93cb450e6d3ab.jpg" alt="Higurashi" class="product-image">
+                <div class="product-title">Jogo Higurashi PS2 (Raro)</div>
+                <div class="product-price">99,99 €</div>
+            </div>
+</html>
