@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!--Esta página serve para o utilizador comprar o produto preenchendo o formulário com as suas informações pessoais e métodos de pagamento-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style3.css"> <!--Usar o style 3-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="h3">   
+    <h3>Preencha o formulário para comprar o produto:</h3> <!--Criar formulário-->
+</div>
+<body>
+    <h1>
+    <form method="post">
+    <fieldset>
+        <legend><h2>Dados Pessoais:</h2></legend>
+
+    <div class="formlinha">
+    <label for="contactNome">Nome:</label> <!--Pedir pelo o nome do utilizador-->
+    <input name="contactNome" id="contactNome" type="text"/>
+    </div>
+    <br>
+
+    <div class="formlinha">
+    <label for="tlmnumero">Número Telefone:</label> <!--Pedir pelo número telefone-->
+    <input name="tlmnumero" id="tlmnumero" type="text"/>
+    </div>
+    <br>
+
+    <div class="formlinha">
+    <label for="email">Email:</label> <!--Pedir pelo email-->
+    <input name="email" id="email" type="text"/>
+    </div>
+    <br>
+    <div class="formlinha">
+    <label for="morada">Morada:</label> <!--Pedir pela morada-->
+    <input name="morada" id="morada" type="text"/>
+    </div>
+    <br>
+    <label for="data_id">Data de Nascimento:</label> <!--Pedir pela data de nascimento-->
+    <input id="data_id" name="data" type="date"><br><br>
+    <br>
+    </div>
+    </fieldset>
+    <br>
+    <fieldset>
+    Insira o seu método de pagamento: <!--Pedir pelo método de pagamento-->
+        <input id="paypal_id" type="checkbox" value="paypal" name="pagamento">PayPal
+        <input id="mbway_id" type="checkbox" value="mbway" name="pagamento">MBway
+        <input id="visa_id" type="checkbox" value="visa" name="pagamento">Visa
+        <input id="giftcard_id" type="checkbox" value="giftcard" name="pagamento">Cartão de Presente
+    </fieldset><br>
+    </form>
+    <fieldset>
+        Insira a quantidade do produto: <!--Pedir pela quantidade do produto-->
+        <input type="number" name="avaliação" min="1" max="100">
+    </fieldset>
+    <br>
+    <fieldset>
+    Insira o seu método de entrega: <!--Pedir pelo método de entrega-->
+    <input id="normal_id" type="checkbox" value="normal" name="entrega">Entrega Normal
+    <input id="rapida_id" type="checkbox" value="rapida" name="entrega">Entrega Rápida
+    </fieldset><br>
+    </h1>
+    <a href="comprado.html"> <!--Redirecionar o utilizador para uma página que comfirma que o produto foi comprado-->
+    <button class="botao">Enviar</button>
+    </a>
+    </div>
+    </h1>
+</div>
+<div class="h3">
+    <a href="index.html"> <!--Redirecionar o utilizador devolta para a página inicial-->
+    <h3>Voltar para a página inicial</h3>
+    </a>
+</div>
+</body>
+</body>
+</html>

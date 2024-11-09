@@ -1,0 +1,30 @@
+.img{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align:center;
+}                        /*Style que é utilizado para a página de erro, obrigado.html, ticket.html e comprado.html*/
+
+body{
+    text-align:center
+}
+
+html{
+    background-color:black;
+}
+
+h3{
+    color:white;
+    text-align:center;
+    font-size:50px;
+}
+
+a{
+    color:red;
+}
+
+h1{
+    color:white;
+    text-align:center;
+    font-size:20px;
+}

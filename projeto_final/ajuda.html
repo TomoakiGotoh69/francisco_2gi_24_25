@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!--Esta página pede pelas informações do utilizador para depois enviar um ticket-->
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="style2.css"> <!--Usar o Style 2-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos e Serviços</title>
+
+</head>
+<body>
+    <!--Criar Cabeçalho-->
+    <header>
+        <a href="index.html"> <!--Enviar o utilizador devolta para a página inicial, página de erro, carrinho ou conta-->
+        <div class="logo">Yume 2Chan</div>
+        </a>
+        <img src="https://yume.wiki/images/2/28/Notice_MissingInfo.png"></a>
+        <div class="search-bar">
+       <body>
+            <input type="text" id="pesquisa" placeholder="Pesquisar produtos......" required>
+            <a href="404.html">
+            <button type="submit">Pesquisar</button>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="conta.html">Minha Conta</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="ajuda.html">Ajuda</a>
+        </div>
+    </header>
+
+    <!--Criar um formulário-->
+    <div class="container">
+        <h1>Ajuda</h1>
+        <br>
+        <fieldset>
+            <legend><h2>Preencha o formulário para receber um Ticket:</h2></legend>
+            <br>
+    
+        <div class="formlinha">
+        <label for="contactNome">Nome:</label>
+        <input name="contactNome" id="contactNome" type="text"/>
+        </div>
+        <br>
+    
+        <div class="formlinha">
+        <label for="tlmnumero">Número Telefone:</label>
+        <input name="tlmnumero" id="tlmnumero" type="text"/>
+        </div>
+        <br>
+    
+        <div class="formlinha">
+        <label for="email">Email:</label>
+        <input name="email" id="email" type="text"/>
+        </div>
+        <br>
+        <div class="formlinha">
+        <label for="morada">Morada:</label>
+        <input name="morada" id="morada" type="text"/>
+        </div>
+        <br>
+        <label for="data_id">Data de Nascimento:</label>
+        <input id="data_id" name="data" type="date"><br><br>
+        <br>
+        Descreva o seu problema: <!--Pedir para o utilizador descrever o problema-->
+        <div class="formlinha">
+        <label for="notes"></label>
+        <textarea name="notas" cols="40" rows="6" maxlenght="200"></textarea>
+        </div>
+        <br>    
+        <a href="ticket.html"> <!--Redirecionar o utilizador para uma página que o notifique que o seu código foi enviado-->
+        <button class="botao">Enviar</button>
+        </a>
+        </div>
+        </fieldset>
+        <br>
+    </div>
+    <br>
+</body>
+</html>
