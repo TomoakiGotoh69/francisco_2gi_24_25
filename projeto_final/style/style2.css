@@ -1,0 +1,156 @@
+html{
+    background-color:black;
+}
+/*Estilos globais*/
+* {                          /*Style que é utilizado para os produtos, conta, termos, carrinho, histórico do carrinho e ajuda*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*Cabeçalho*/
+header {
+    background-color: darkred;
+    padding: 15px 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: underline;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.search-bar {
+    flex: 1;
+    margin: 0 20px;
+}
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+.nav-links a {
+    color: black;         
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.container {
+    padding: 20px;
+    background-color:black;
+    color: white;
+    text-align: center;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.product-card {
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 100px;
+    text-align:center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.product-card:hover {
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+script{
+    width: 500x;
+    height: 500px;
+    border-radius: 4px;
+    margin-top:-35px; 
+}
+
+.product-image {
+    width: 500x;
+    height: 500px;
+    border-radius: 4px;
+    margin-top:-35px;
+}
+
+.imagem {
+    width: 300px;
+    cursor: pointer; 
+    border-radius: 8px;
+}
+
+.product-title{
+    font-size: 50px;
+    margin: 10px 0;
+    color: red;
+}
+.product-price {
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.imagem-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+footer {
+    background-color: black;
+    padding: 15px 20px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+th {
+    background-color: darkred;
+    color: white;
+}
+
+.botao{
+    width: 200px;               
+    height: 60px;               
+    padding: 15px 30px;       
+    font-size: 20px;           
+    color: white;
+    background-color: darkred;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+a{
+    color:black;
+}
+
+.formlinha {
+    margin-bottom:20px;
+}    
+
+h1{
+    color:white;
+}

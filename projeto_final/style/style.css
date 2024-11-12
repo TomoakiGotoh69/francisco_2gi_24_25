@@ -1,0 +1,97 @@
+html{ 
+    background-color:black;    /*Style que é utilizado para o Index.html*/
+}
+/*Estilos gerais*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*Cabeçalho*/
+header {
+    background-color: darkred;
+    padding: 15px 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: underline;
+}
+.logo { /*Mascote*/
+    font-size: 24px;
+    font-weight: bold;
+}
+.search-bar { /*Barra de pesquisa */
+    flex: 1;
+    margin: 0 20px;
+}
+.search-bar input { 
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+.nav-links a {
+    color: black;        
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Container principal*/
+.container {
+    padding: 20px;
+    background-color:black;
+    color: white;
+    text-align: center;
+}
+
+/* Seção de produtos */
+.product-grid { /*Borda do produto */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.product-card { /*Borda do produto */
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.product-card:hover {         /* Animação do produto */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product-image {  /*Imagem do produto */
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.product-title { /*Título do produto */
+    font-size: 16px;
+    margin: 10px 0;
+    color: red;
+}
+.product-price {  /*Preço do produto */
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*Rodapé */
+footer {
+    background-color: black;
+    padding: 15px 20px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
+/*a*/
+a{
+    color:red;
+}
