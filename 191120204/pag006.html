@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcula1(){
+            document.contas.r.value = eva1(document.contas.n1.value) + eva1(document.contas.n2.value) + eva1(document.contas.n2.value);
+        }
+    </script>
+</head>
+<body>
+    <form NAME="contas">
+        Introduza um número:<INPUT TYPE="text" name="n1" size="5"><br><br>
+            Introduza outro número:<input type="text" name="n2" size="5"><br><br>
+            Resultado:<input tpye="text" name="r" size="10">
+            <input type="button" name="soma" value="soma" onClick="calcula1()">
+    </form> 
+</body>
+</html>
